@@ -41,8 +41,6 @@ input:focus {
 }
 
 button {
-  margin-top: 30px;
-  margin-right:4px;
   padding: 12px 24px;
   background-color: #3490dc;
   color: #fff;
@@ -51,9 +49,16 @@ button {
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: bold;
+  margin-top: 30px;
+  display: inline-block;
+  width: calc(35% - 6px);
+  margin-right: 4px;
   transition: background-color 0.3s ease;
 }
-
+#resumeBtn,
+#resetBtn {
+  margin-top: 8px;
+}
 button:hover {
   background-color: #2779bd;
 }
