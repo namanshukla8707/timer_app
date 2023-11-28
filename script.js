@@ -8,10 +8,10 @@ const timerDisplay = document.getElementById("timer");
 let timerInterval;
 let totalTime = 0;
 
-// Start button click event
+
 startBtn.addEventListener("click", startTimer);
 
-// Function to start the timer
+
 function startTimer() {
   const minutes = parseInt(minutesInput.value);
   const seconds = parseInt(secondsInput.value);
@@ -35,7 +35,7 @@ function startTimer() {
   timerInterval = setInterval(updateTimer, 1000);
 }
 
-// Function to update the timer
+
 function updateTimer() {
   let minutes = Math.floor(totalTime / 60);
   let seconds = totalTime % 60;
@@ -52,7 +52,7 @@ function updateTimer() {
   }
 }
 
-// Reset button functionality
+
 resetBtn.addEventListener("click", function () {
   clearInterval(timerInterval);
   minutesInput.value = "";
