@@ -15,8 +15,8 @@ startBtn.addEventListener("click", startTimer);
 function startTimer() {
   const minutes = parseInt(minutesInput.value);
   const seconds = parseInt(secondsInput.value);
-
-  if (!minutes || !seconds) {
+  
+  if ((!minutes&&minutes!==0) || (!seconds&&seconds!==0)) {
     alert("Please enter a valid time");
     return;
   }
